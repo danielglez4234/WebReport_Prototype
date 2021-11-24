@@ -154,8 +154,7 @@ var monitorSlectedListItem = [];
 
 const options = {
     'Accept': 'application/json',
-    'Content-Type': 'application/json',
-    'Access-Control-Allow-Origin': '*'
+    'Content-Type': 'application/json'
 };
 
 
