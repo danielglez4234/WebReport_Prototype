@@ -308,7 +308,7 @@ class Container extends Component {
 
 componentDidMount(){
 const _this = this;
-  axios.get("http://172.18.0.4:8080/WebReport/rest/webreport/components", { headers: options	})
+  axios.get("http://localhost:8080/WebReport/rest/webreport/components", { headers: options	})
     .then(response => {
 
       var itemComponent = [];
@@ -379,7 +379,7 @@ this.generateGrafic();
       startloadingMonitors: false
     });
 
-    axios.get("http://172.18.0.4:8080/WebReport/rest/webreport/components/" + title)
+    axios.get("http://localhost:8080/WebReport/rest/webreport/components/" + title)
       .then(response => {
 
         //-----------------------FOR SEARCH FUNCTION----------------------------------------------------
