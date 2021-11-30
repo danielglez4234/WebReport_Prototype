@@ -379,7 +379,7 @@ this.generateGrafic();
       startloadingMonitors: false
     });
 
-    axios.get("http://localhost:8080/WebReport/rest/webreport/components/" + title)
+    axios.get("http://localhost:8080/WebReport/rest/webreport/components/" + title, { headers: options	})
       .then(response => {
 
         //-----------------------FOR SEARCH FUNCTION----------------------------------------------------
